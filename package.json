@@ -1,0 +1,30 @@
+{
+  "name": "auto_updater_electron_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder -p always",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      {
+          "provider": "github",
+          "owner": "AmmarReloaded",
+          "repo": "auto_updater_electron_1"
+      }
+    ]
+  },
+  "author": "Ammar UD Din",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "electron-updater": "^5.3.0",
+    "path": "^0.12.7"
+  }
+}
